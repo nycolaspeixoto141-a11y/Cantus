@@ -149,9 +149,13 @@ function App() {
     localStorage.getItem("fotoPerfil") || ""
   );
 
-  const [nomePerfil, setNomePerfil] = useState(
-    localStorage.getItem("nomePerfil") || "João Silva"
-  );
+const [nomePerfil, setNomePerfil] = useState(
+  localStorage.getItem("nomePerfil") || ""
+);
+
+const [funcaoPerfil, setFuncaoPerfil] = useState(
+  localStorage.getItem("funcaoPerfil") || ""
+);
 
   const [funcaoPerfil, setFuncaoPerfil] = useState(
     localStorage.getItem("funcaoPerfil") || "Violonista"
@@ -1504,22 +1508,21 @@ function App() {
               </div>
             </div>
 
-            <button
-              onClick={salvarPerfil}
-              style={{
-                marginTop: "20px",
-                background: "#facc15",
-                color: "#071426",
-                border: "none",
-                padding: "12px 18px",
-                borderRadius: "12px",
-                fontWeight: "bold",
-                cursor: "pointer",
-                width: "100%",
-              }}
-            >
-              💾 Salvar perfil
-            </button>
+        <button
+  onClick={salvarPerfil}
+  style={{
+    background: "#facc15",
+    color: "#081322",
+    border: "none",
+    borderRadius: "14px",
+    padding: "14px",
+    fontWeight: "bold",
+    cursor: "pointer",
+    width: "100%",
+  }}
+>
+  💾 Salvar perfil
+</button>
           </div>
         )}
 
